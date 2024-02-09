@@ -1,0 +1,26 @@
+/* Lora */
+@font-face {
+  font-family: Lora;
+  src: url(../src/assets/fonts/Lora/Lora-Regular.ttf);
+}
+
+.regular-lora {
+  font-family: Lora;
+}
+
+/* Plus Jakarta Sans */
+@font-face {
+  font-family: RegularPlusJakartaSans;
+  src: url(../src/assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.ttf);
+}
+
+.regular-plusJakartaSans {
+  font-family: RegularPlusJakartaSans;
+}
+
+html {
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  /* overflow: hidden; */
+}

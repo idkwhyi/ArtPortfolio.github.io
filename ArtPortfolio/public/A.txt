@@ -1,0 +1,2 @@
+1. hover effect list not hover (later can interupt other func)
+2. responsive (button and font size)
