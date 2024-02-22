@@ -1,11 +1,18 @@
-- hover effect list not hover (later can interupt other func) 🌪️
-- responsive all (font size) 
+✅ = done
+🌟 = ongoing / will begin
+🔥 = will start after the previous task is completed
+🐳 = start working while other tasks are started 
 
+------------------------------------------------------------------------------
+| TODO 
 
-- navbar hover on close
-- router ? 
+🐳 - responsive all (font size, positioning, flex, other) 
 
-- make the gallery page
+- navbar hover on close animation [\\\ no need cause the main inspiration have the same problem ]
+✅ - router [\\\ need router for the link inside the art showcase also can make for the footer]
+
+🌟 - make the gallery page 
 - connect the contact to real email
 
-- add loading animation for change page
+🔥 - add loading animation for change page 
+- find the true color of the page

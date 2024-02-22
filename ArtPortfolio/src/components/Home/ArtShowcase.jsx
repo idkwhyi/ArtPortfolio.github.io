@@ -1,3 +1,6 @@
+//utils
+import { Link } from 'react-router-dom';
+//components
 import Modal from '../Modal_Image/ModalImage'
 
 const ArtShowcase = () => {
@@ -12,7 +15,7 @@ const ArtShowcase = () => {
       <div className="w-full h-fit p-10 flex flex-row justify-between align-center items-center ">
         {/* <div className="regular-lora text-4xl ">Some of my art ________________________________</div> */}
         <div className="regular-lora text-4xl ">Some of my art </div>
-        <a className="pr-20 regular-plusJakartaSans text-xl">More art</a>
+        <Link to='gallery' className="pr-20 regular-plusJakartaSans text-xl">More art</Link>
       </div>
 
       {/* container for gallery intro */}
