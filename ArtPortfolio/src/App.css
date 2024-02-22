@@ -1,3 +1,10 @@
+html {
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  /* overflow: hidden; */
+}
+
 /* Lora */
 @font-face {
   font-family: Lora;
@@ -8,19 +15,30 @@
   font-family: Lora;
 }
 
+@font-face {
+  font-family: LoraBold;
+  src: url(../src/assets//fonts/Lora/Lora-Bold.ttf);
+}
+
+.bold-lora {
+  font-family: LoraBold;
+}
+
 /* Plus Jakarta Sans */
 @font-face {
-  font-family: RegularPlusJakartaSans;
+  font-family: PlusJakartaSansRegular;
   src: url(../src/assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.ttf);
 }
 
 .regular-plusJakartaSans {
-  font-family: RegularPlusJakartaSans;
+  font-family: PlusJakartaSansRegular;
 }
 
-html {
-  width: 100vw;
-  height: auto;
-  overflow-x: hidden;
-  /* overflow: hidden; */
+@font-face {
+  font-family: PlusJakartaBold;
+  src: url(../src/assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.ttf);
+}
+
+.bold-plusJakartaSans {
+  font-family: PlusJakartaBold;
 }

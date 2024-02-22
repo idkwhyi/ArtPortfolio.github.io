@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 html {
+  font-size: 16px;
   background-color: #f4f4f4;
+}
+
+::selection {
+  background-color: #838383;
+  /* color: rgb(184, 184, 184); */
 }

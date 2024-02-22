@@ -6,7 +6,7 @@ import medium from '../../assets/images/medium.png'
 
 const NavButton = ({ onClick, navStatus }) => {
   return (
-    <button onClick={onClick} className="fixed z-10 border border-black top-12 right-40 text-black bg-white w-12 h-12 flex items-center justify-center rounded-full">
+    <button onClick={onClick} className="navButton fixed z-10 border border-black text-black bg-white w-12 h-12 flex items-center justify-center rounded-full">
       <img className="w-3.5 h-3.5 transition-opacity duration-200 ease-in-out" src={navStatus ? closeIcon : medium} alt="Close icon" />
     </button>
   );
@@ -14,7 +14,7 @@ const NavButton = ({ onClick, navStatus }) => {
 
 NavButton.propTypes = {
   onClick: PropTypes.func.isRequired,
-  navStatus: PropTypes.func.isRequired,
+  navStatus: PropTypes.bool.isRequired,
 };
 
 export default NavButton;

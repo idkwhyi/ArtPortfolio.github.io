@@ -1,4 +1,4 @@
-import './Style/Navbar.css';
+import '../../styles/Navbar/Navbar.css';
 import PropTypes from 'prop-types';
 import { useState } from "react"
 //components
@@ -25,30 +25,35 @@ const Navbar = ({ handlePageChange }) => {
   }
 
   return (
-    <div className='navbar-main-container absolute flex items-center '>
+    <div className='fixed'>
       <NavButton onClick={handleShowNavbar} navStatus={showNavbar} />
+      <div className={`navbar-main-container absolute flex items-center`}>
 
-      {/* navbar black background */}
-      <div className={`navBgContainer absolute -rotate-2 ${showNavbar ? 'openNavbar' : 'closeNavbar'} ${textMouseOver || 'bg-custom-black'}`}>
-      </div>
-      {/* list of navbar */}
+        {/* navbar black background */}
+        <div className={`navBgContainer absolute -rotate-2 ${showNavbar ? 'openNavbar' : 'closeNavbar'} ${textMouseOver || 'bg-custom-black'}`}>
+        </div>
+        {/* navbar black background */}
 
-      <div className="navListContainer -rotate-2 absolute left-0 top-0 w-full h-full pt-10 pl-20 flex-end flex-col list-none">
+        <div className={`navListContainer -rotate-2 absolute left-0 top-0 w-full h-full pt-10 flex-end flex-col list-none`}>
 
-        <NavList className={`${showNavbar ? 'openNavList navListOpenDelay' : (mount ? 'closeNavList navListCloseDelay' : 'defaultListStyle')}`} 
-          text="Home"  
-          onClick={() => handleListItemClick('home')}
-          onMouseEnter={() => handleListHover('homeBg')}
-          onMouseLeave={() => handleListHover('bg-custom-black')}
-        />
+          <NavList className={`${showNavbar ? 'openNavList navListOpenDelay' : (mount ? 'closeNavList navListCloseDelay' : 'defaultListStyle')}`}
+            text="Home"
+            onClick={() => handleListItemClick('home')}
+            onMouseEnter={() => handleListHover('homeBg')}
+            onMouseLeave={() => handleListHover('bg-custom-black')}
+          />
 
-        <NavList className={`${showNavbar ? 'openNavList navListOpenDelay' : (mount ? 'closeNavList navListCloseDelay' : 'defaultListStyle')}`} 
-          text="About" 
-          onClick={() => handleListItemClick('about')} 
-          onMouseEnter={() => handleListHover('aboutBg')} 
-          onMouseLeave={() => handleListHover('bg-custom-black')}
-        />
+          <NavList className={`${showNavbar ? 'openNavList navListOpenDelay' : (mount ? 'closeNavList navListCloseDelay' : 'defaultListStyle')}`}
+            text="Gallery"
+            onClick={() => handleListItemClick('about')}
+            onMouseEnter={() => handleListHover('aboutBg')}
+            onMouseLeave={() => handleListHover('bg-custom-black')}
 
+
+          />
+
+
+        </div>
       </div>
     </div>
   )

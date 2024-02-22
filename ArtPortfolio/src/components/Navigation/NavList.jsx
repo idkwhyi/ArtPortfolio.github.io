@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import './Style/Navbar.css';
+import '../../styles/Navbar/Navbar.css'
 
 //components
 // import arrowIcon from '../../assets/images/doubleArrow.png'
@@ -10,10 +10,10 @@ const NavList = ({ className, text, onClick, onMouseEnter, onMouseLeave }) => {
     <div className={`w-fit h-fit text-white hover:text-black ${className}`}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave} >
-      <li className='navListHover listFontSize w-full h-full gap-0 regular-plusJakartaSans text-white'>
+      <li className='navListHover listFontSize w-full h-full gap-0 regular-plusJakartaSans'>
         {/* <img className='w-10 h-10 transition-opacity duration-200 ease-in-out' src={normalArrow} alt='arrowIcon' /> */}
         <a
-          className="w-full h-full font-bold hover:text-black"
+          className=" w-full h-full font-bold hover:text-black"
           onClick={onClick}
           href="#"
         >

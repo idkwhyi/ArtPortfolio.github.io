@@ -1,0 +1,9 @@
+.images {
+  max-width: 30rem;
+  max-height: 40rem;
+}
+
+.closeButton {
+  margin-top: 3rem;
+  margin-right: 2vw;
+}

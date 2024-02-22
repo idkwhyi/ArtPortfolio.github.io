@@ -1,0 +1,18 @@
+.h1 {
+  font-size: 150px;
+  line-height: normal;
+}
+
+.h2 {
+  font-size: 93px;
+}
+
+.bento-border {
+  border: 3px solid black;
+  border-radius: 20px;
+}
+.bento-border-transparent {
+  border: 3px solid transparent;
+  border-radius: 20px;
+}
+

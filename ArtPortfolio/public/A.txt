@@ -1,2 +1,11 @@
-1. hover effect list not hover (later can interupt other func)
-2. responsive (button and font size)
+- hover effect list not hover (later can interupt other func) 🌪️
+- responsive all (font size) 
+
+
+- navbar hover on close
+- router ? 
+
+- make the gallery page
+- connect the contact to real email
+
+- add loading animation for change page

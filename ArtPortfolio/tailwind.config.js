@@ -8,9 +8,18 @@ export default {
     colors: {
       'white': '#f4f4f4',
       'black': '#464646',
+      'gray': '#333333',
       'custom-black': '#2e2e2e',
       'red': '#ab5b5b',
       'green': '#5bab64',
+
+      'lightBlue': '#D0D9D4',
+      'coldBlue': '#AEBFBE',
+      'paleWhite': '#F2EFDF',
+      'blackBrown': '#59554C',
+
+      'blue': '#346e91',
+      'sample': '#cfcfcf'
     },
     extend: {},
   },
