@@ -42,3 +42,23 @@ html {
 .bold-plusJakartaSans {
   font-family: PlusJakartaBold;
 }
+
+
+/* Rocoleta */
+@font-face {
+  font-family: Rocoleta;
+  src: url(../src/assets/fonts/Rocoleta/Recoleta-Regular.ttf);
+}
+
+.regular-rocoleta {
+  font-family: Rocoleta;
+}
+
+@font-face {
+  font-family: RocoletaBold;
+  src: url(../src/assets/fonts/Rocoleta/Recoleta-Bold.ttf);
+}
+
+.bold-rocoleta {
+  font-family: RocoletaBold;
+}

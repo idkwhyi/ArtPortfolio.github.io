@@ -1,36 +1,55 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Modal from './Image';
 import '../../styles/Modal_image/Modal_Image.css'
 import closeIcon from '../../assets/images/closeIcon.png'
 
-const ModalImage = ({ src, alt, className }) => {
+const ModalImage = ({ src, alt, className, toggleStatus }) => {
 
   const [openStatus, setOpenStatus] = useState(false);
 
   const openModal = () => {
-    setOpenStatus(true);
+    setOpenStatus(prevStatus => !prevStatus);
+    toggleStatus(!openStatus)
   }
 
   const closeModal = () => {
-    setOpenStatus(false);
+    setOpenStatus(prevStatus => !prevStatus);
+    toggleStatus(!openStatus)
   }
 
-  const closeModalbyContainer = () => {
+  const closeModalbyContainer = (event) => {
     const modalContainer = document.getElementById('modalContainer');
     event.target == modalContainer && closeModal();
   }
 
+  useEffect(() => {
+    const html = document.documentElement;
+    const body = document.body;
+    if (openStatus) {
+      html.style.overflowY = 'hidden';
+      body.style.overflowY = 'hidden';
+    } else {
+      html.style.overflowY = '';
+      body.style.overflowY = '';
+    }
+
+    return () => {
+      html.style.overflowY = '';
+      body.style.overflowY = '';
+    };
+  }, [openStatus]);
+
 
   return (
-    <>
-      <img className={`images bg-black shadow-xl object-cover transition duration-100 ease-in hover:shadow-2xl ${className}`} src={src} alt={alt}
+    <div>
+      <img className={`images bg-black shadow-xl w-full object-cover transition duration-100 ease-in hover:shadow-2xl ${className}`} src={src} alt={alt}
         onClick={openModal}
       />
 
       {
         openStatus &&
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm"
+        <div className="z-50 fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm"
           id='modalContainer'
           onClick={closeModalbyContainer}
         >
@@ -44,7 +63,7 @@ const ModalImage = ({ src, alt, className }) => {
         </div>
       }
 
-    </>
+    </div>
   );
 };
 
@@ -53,6 +72,7 @@ ModalImage.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   className: PropTypes.string,
+  toggleStatus: PropTypes.func,
 };
 
 export default ModalImage;

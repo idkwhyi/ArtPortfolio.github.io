@@ -1,41 +1,41 @@
 //utils
-import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import '../../styles/ArtShowcase.css'
+
 //components
 import Modal from '../Modal_Image/ModalImage'
+import LinkButton from '../Button/LinkButton';
 
-const ArtShowcase = () => {
-
-  // const handleMoreArt = () => {
-  //   return 0
-  // }
-
+const ArtShowcase = ({ toggleNavButton }) => {
   return (
-    <div className="w-full h-fit flex flex-col gap-16">
+    <div className="z-0 main-container regular-rocoleta w-screen h-fit flex flex-col items-center gap-5 p-5">
 
-      <div className="w-full h-fit p-10 flex flex-row justify-between align-center items-center ">
+      <div className="first-container gap-10 justify-between items-center">
         {/* <div className="regular-lora text-4xl ">Some of my art ________________________________</div> */}
-        <div className="regular-lora text-4xl ">Some of my art </div>
-        <Link to='gallery' className="pr-20 regular-plusJakartaSans text-xl">More art</Link>
+        <div className="someArt-text ">Some of my art </div>
+        <div className='regular-plusJakartaSans w-fit h-fit flex flex-row justify-between items-center'>
+          <LinkButton text='More Art' link='gallery'/>
+        </div>
       </div>
 
       {/* container for gallery intro */}
-      <div className='w-screen h-fit p-5 flex flex-row justify-center items-start '>
+      <div className='second-container justify-center items-start p-5'>
 
-        <div className='w-1/2 h-fit flex flex-col gap-16'>
-          <Modal src='https://images.pexels.com/photos/20035207/pexels-photo-20035207/free-photo-of-red-house-by-the-sea.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='sample' className="ml-10" />
+        <div className='second-cotainer-first-child gap-16 flex items-center justify-center'>
+          <Modal src='https://images.pexels.com/photos/20035207/pexels-photo-20035207/free-photo-of-red-house-by-the-sea.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='sample'  toggleStatus={toggleNavButton}/>
 
-          <Modal src='https://images.pexels.com/photos/2303781/pexels-photo-2303781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='sample' className="ml-16" />
+          <Modal src='https://images.pexels.com/photos/2303781/pexels-photo-2303781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='sample' toggleStatus={toggleNavButton}/>
 
-          <Modal src='https://images.pexels.com/photos/301614/pexels-photo-301614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='sample' className="ml-7" />
+          <Modal src='https://images.pexels.com/photos/301614/pexels-photo-301614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='sample' toggleStatus={toggleNavButton}/>
         </div>
 
-        <div className='w-1/2 h-fit flex flex-col gap-16'>
+        <div className='second-cotainer-second-child gap-16 flex items-center'>
           {/* images row 2 */}
-          <Modal src='https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='sample' className="ml-9" />
+          <Modal src='https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='sample' toggleStatus={toggleNavButton}/>
 
-          <Modal src='https://images.pexels.com/photos/19927917/pexels-photo-19927917/free-photo-of-police-car-near-radio-city-music-hall-in-new-york.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='sample' className="ml-2" />
+          <Modal src='https://images.pexels.com/photos/19927917/pexels-photo-19927917/free-photo-of-police-car-near-radio-city-music-hall-in-new-york.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='sample'  toggleStatus={toggleNavButton}/>
 
-          <Modal src='https://images.pexels.com/photos/16226513/pexels-photo-16226513/free-photo-of-torii-path-fushimi-inari-taisha-kyoto-japan.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='sample' className="ml-6" />
+          <Modal src='https://images.pexels.com/photos/16226513/pexels-photo-16226513/free-photo-of-torii-path-fushimi-inari-taisha-kyoto-japan.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='sample'  toggleStatus={toggleNavButton}/>
 
         </div>
 
@@ -43,6 +43,10 @@ const ArtShowcase = () => {
 
     </div>
   )
+}
+
+ArtShowcase.propTypes = {
+  toggleNavButton: PropTypes.func.isRequired,
 }
 
 export default ArtShowcase;

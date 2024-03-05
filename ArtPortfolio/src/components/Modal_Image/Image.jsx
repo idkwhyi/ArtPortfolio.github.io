@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
+import '../../styles/Modal_image/Modal_Image.css'
 
 const Image = ({ src, alt }) => {
     return (
-        <div className="flex justify-center items-center h-screen p-3">
+        <div className="images-after-clicked w-full flex justify-center items-center p-3">
             <img
                 src={src}
                 alt={alt}
-                className="object-contain max-w-5xl max-h-full"
+                className="images-element object-contain "
             />
         </div>
     )

@@ -1,24 +1,20 @@
 import '../../styles/Footer/Footer.css'
+import arrowTopRight from '../../assets/images/arrowTopRight.png'
 
 const Footer = () => {
   return (
-    <div className='footer-container w-screen h-80 flex p-12 px-32 gap-52 justify-around'>
-      <div className="regular-plusJakartaSans text-7xl">Get in touch</div>
+    <div className='z-0 footer-container regular-rocoleta h-80'>
 
-      {/* list container */}
-      <div className='w-fit h-fit flex flex-row gap-24 p-5 mr-24'>
+      <div className='email-container hover-email flex flex-row justify-between'>
+        <div className="get-in-touch"><a href='https://mail.google.com'>Get in touch</a></div>
+        <img src={arrowTopRight} alt='arrow top right' className='w-24 h-24 object-contain' />
+      </div>
 
-        <div className="w-full h-full flex flex-col gap-2">
-          <div className="bold-lora text-xl text-left">
-            Social
-          </div>
-          <hr></hr>
-          <div className="regular-plusJakartaSans w-auto h-full list-none flex flex-col items-start justify-start">
-            <li>Instagram</li>
-            <li>Tiktok</li>
-          </div>
+      <div className='social-container p-5'>
+        <div className="w-auto h-fit list-none flex flex-col items-start justify-start">
+          <li className='hover-list '><a href='https://www.instagram.com/'>Instagram</a></li>
+          <li className='hover-list '><a href='https://www.tiktok.com/'>Tiktok</a></li>
         </div>
-
       </div>
 
     </div>

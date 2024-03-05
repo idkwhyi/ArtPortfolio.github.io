@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     colors: {
+
+      // header color
+      'firstHeader': '#E78895',
+      'secondHeader': '#BED1CF',
+      'thirdHeader': '#DCBFFF',
+
       'white': '#f4f4f4',
       'black': '#464646',
       'gray': '#333333',

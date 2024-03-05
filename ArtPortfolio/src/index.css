@@ -7,7 +7,11 @@ html {
   background-color: #f4f4f4;
 }
 
-::selection {
-  background-color: #838383;
-  /* color: rgb(184, 184, 184); */
+/* html::-webkit-scrollbar {
+  display: none;
 }
+
+html {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+} */

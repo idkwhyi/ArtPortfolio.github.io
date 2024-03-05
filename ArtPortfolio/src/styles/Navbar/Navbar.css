@@ -20,23 +20,25 @@ desktop : 1024 1920 (MY DEFAULT STYLE BASED ON THIS)
   height: 60vh;
   top: -8vh;
   left: -3vw;
-  transition: background-color 0.1s ease, margin .5s ease-in-out .2s;
+  transition: background-color 0.1s ease;
 }
 
 .homeBg {
   background-color: #fadce4;
 }
 
-.aboutBg {
+.galleryBg {
   background-color: #c2d6f2;
 }
 
 .openNavbar {
   margin-top: 0;
+  transition: margin .7s ease-in-out .0s;
 }
 
 .closeNavbar {
   margin-top: -42rem;
+  transition: margin .7s ease-in-out .2s;
 }
 
 /* NAV LIST */
@@ -81,19 +83,19 @@ desktop : 1024 1920 (MY DEFAULT STYLE BASED ON THIS)
 }
 
 .navListContainer > .navListOpenDelay:nth-child(1) {
-  animation-delay: .38s;
+  animation-delay: .36s;
 }
 
 .navListContainer > .navListOpenDelay:nth-child(2) {
-  animation-delay: .48s;
+  animation-delay: .45s;
 }
 
 .navListContainer > .navListCloseDelay:nth-child(1) {
-  animation-delay: .1s;
+  animation-delay: .2s;
 }
 
 .navListContainer > .navListCloseDelay:nth-child(2) {
-  animation-delay: 0s;
+  animation-delay: .0s;
 }
 
 
