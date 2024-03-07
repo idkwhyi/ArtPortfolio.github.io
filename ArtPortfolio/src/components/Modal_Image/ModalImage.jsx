@@ -21,6 +21,7 @@ const ModalImage = ({ src, alt, className, toggleStatus }) => {
   const closeModalbyContainer = (event) => {
     const modalContainer = document.getElementById('modalContainer');
     event.target == modalContainer && closeModal();
+    console.info("container clicked")
   }
 
   useEffect(() => {
@@ -49,7 +50,7 @@ const ModalImage = ({ src, alt, className, toggleStatus }) => {
 
       {
         openStatus &&
-        <div className="z-50 fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm"
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm"
           id='modalContainer'
           onClick={closeModalbyContainer}
         >

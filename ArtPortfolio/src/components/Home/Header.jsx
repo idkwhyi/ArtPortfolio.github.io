@@ -1,8 +1,8 @@
 //utils
 import '../../styles/Header.css'
 //components
-import headerImage1 from '../../assets/gallery_images/IMG_1.jpg'
-import headerImage2 from '../../assets/gallery_images/IMG_2.png'
+import headerImage1 from '../../assets/gallery_images/blueFlower.jpg'
+import headerImage2 from '../../assets/gallery_images/nice.png'
 
 const Header = () => {
   return (
