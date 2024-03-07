@@ -1,7 +1,7 @@
 //utils
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 //components
 import './App.css'
 //pages
@@ -22,30 +22,6 @@ function ScrollToTop() { // make the page always start on top when changing page
 
 
 function App() {
-  const hiddenElementsRef = useRef([]);
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('showHiddenElement');
-        }
-      });
-    });
-
-    hiddenElementsRef.current.forEach((el) => {
-      if (el && !el.intersectionObserved) {
-        observer.observe(el);
-        el.intersectionObserved = true;
-      }
-    });
-
-    // Cleanup function
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
-
-
   return (
     <Router>
       <ScrollToTop />

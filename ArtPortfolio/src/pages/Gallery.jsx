@@ -39,11 +39,22 @@ import pixel from '../../src/assets/gallery_images/pixel.jpg'
 import poster from '../../src/assets/gallery_images/poster.png'
 import sky from '../../src/assets/gallery_images/sky.png'
 import wine from '../../src/assets/gallery_images/wineGlass2.jpg'
+import un_1 from '../assets/gallery_images/untitled1.png'
+import un_2 from '../assets/gallery_images/untitled2.png'
+import un_3 from '../assets/gallery_images/untitled3.png'
+import un_4 from '../assets/gallery_images/untitled4.png'
+import un_5 from '../assets/gallery_images/untitled5.png'
+import un_6 from '../assets/gallery_images/untitled6.png'
+import un_7 from '../assets/gallery_images/untitled7.png'
+import un_8 from '../assets/gallery_images/untitled8.png'
+import un_9 from '../assets/gallery_images/untitled9.png'
+import un_10 from '../assets/gallery_images/untitled10.png'
+import un_11 from '../assets/gallery_images/untitled11.png'
 
 
 const About = () => {
 
-  const [navButtonDisplayStatus, setNavButtonDisplayStatus] = useState(true) 
+  const [navButtonDisplayStatus, setNavButtonDisplayStatus] = useState(true)
   const toggleNavButton = (navButtonDisplayStatus) => {
     setNavButtonDisplayStatus(!navButtonDisplayStatus)
   }
@@ -61,13 +72,17 @@ const About = () => {
           <Modal src={cameraGuy} alt='sample' className="" toggleStatus={toggleNavButton} />
           <Modal src={cherry} alt='sample' className="" toggleStatus={toggleNavButton} />
           {/* <Modal src={eyeClose} alt='sample' className="" toggleStatus={toggleNavButton} /> */}
+          <Modal src={un_2} toggleStatus={toggleNavButton} />
           <Modal src={glass} alt='sample' className="" toggleStatus={toggleNavButton} />
           {/* <Modal src={handSecond} alt='sample' className="" toggleStatus={toggleNavButton} /> */}
           <Modal src={sit} alt='sample' className="" toggleStatus={toggleNavButton} />
+          <Modal src={un_3} alt='sample' toggleStatus={toggleNavButton} />
+          <Modal src={un_4} alt='sample' toggleStatus={toggleNavButton} />
           <Modal src={nice} alt='sample' className="" toggleStatus={toggleNavButton} />
           <Modal src={secondPhone} alt='sample' className="" toggleStatus={toggleNavButton} />
           <Modal src={fourthPhone} alt='sample' className="" toggleStatus={toggleNavButton} />
           <Modal src={man} alt='sample' className="" toggleStatus={toggleNavButton} />
+          <Modal src={un_1} alt='sample' toggleStatus={toggleNavButton} />
         </div>
         {/* column 2 */}
         <div className="inner-art-container h-fit p-5 gap-10">
@@ -76,12 +91,16 @@ const About = () => {
           <Modal src={apple} alt='sample' className="" toggleStatus={toggleNavButton} />
           <Modal src={zebra} alt='sample' className="" toggleStatus={toggleNavButton} />
           <Modal src={canvas} alt='sample' className="" toggleStatus={toggleNavButton} />
+          <Modal src={un_5} alt='sample' toggleStatus={toggleNavButton} />
           <Modal src={dwarf} alt='sample' className="" toggleStatus={toggleNavButton} />
           <Modal src={eyeTable} alt='sample' className="" toggleStatus={toggleNavButton} />
           <Modal src={hand} alt='sample' className="" toggleStatus={toggleNavButton} />
           <Modal src={idk} alt='sample' className="" toggleStatus={toggleNavButton} />
           <Modal src={phone} alt='sample' className="" toggleStatus={toggleNavButton} />
           <Modal src={thirdPhone} alt='sample' className="" toggleStatus={toggleNavButton} />
+          <Modal src={un_6} alt='sample' toggleStatus={toggleNavButton} />
+          <Modal src={un_7} alt='sample' toggleStatus={toggleNavButton} />
+          <Modal src={un_8} alt='sample' toggleStatus={toggleNavButton} />
           <Modal src={poster} alt='sample' className="" toggleStatus={toggleNavButton} />
         </div>
 
@@ -93,9 +112,12 @@ const About = () => {
           <Modal src={fifthPhone} alt='sample' className="" toggleStatus={toggleNavButton} />
           <Modal src={wine} alt='sample' className="" toggleStatus={toggleNavButton} />
           <Modal src={tenthPhone} alt='sample' className="" toggleStatus={toggleNavButton} />
+          <Modal src={un_9} alt='sample' toggleStatus={toggleNavButton} />
           <Modal src={pixel} alt='sample' className="" toggleStatus={toggleNavButton} />
+          <Modal src={un_10} alt='sample' toggleStatus={toggleNavButton} />
           <Modal src={sky} alt='sample' className="" toggleStatus={toggleNavButton} />
           <Modal src={eightPhone} alt='sample' className="" toggleStatus={toggleNavButton} />
+          <Modal src={un_11} alt='sample' toggleStatus={toggleNavButton} />
           <Modal src={sixthPhone} alt='sample' className="" toggleStatus={toggleNavButton} />
         </div>
 
