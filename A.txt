@@ -1,0 +1,28 @@
+✅ = done
+🌟 = ongoing / will begin
+🔥 = will start after the previous task is completed
+🐳 = start working while other tasks are started 
+
+------------------------------------------------------------------------------
+| TODO 
+
+🐳 - responsive all (font size, positioning, flex, other) 
+✅ - router [\\\ need router for the link inside the art showcase also can make for the footer]
+✅ - make the gallery page 
+🌟 - connect the contact to real contact (easy)
+🐞 - change page wait until navbar animation completed (hard to apply seems cannot because of the time)
+🔥 - add loading animation every change page 
+- find the color of the page
+- responsive
+✅ - scroll on action for example when open the image scroll = false the same should be applied for the navbar
+✅ - open image = hide navbutton
+
+
+CHANGE HEADER FLEX TO FLEX WRAP SO IT DONT NEED ANY CONTAINER TRY THIS FR
+
+
+responsive task:
+-header done
+-art showcase
+-footer
+-gallery
